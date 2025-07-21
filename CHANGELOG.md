@@ -1,5 +1,11 @@
 # Changelog
 
+## Paru v2.1.1 (2025-07-08)
+
+### Fixed
+
+- Stdin error on single hyphen input
+
 ## Paru v2.1.0 (2025-07-08)
 
 ### Added
