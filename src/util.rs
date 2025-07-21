@@ -131,7 +131,7 @@ pub fn ask(config: &Config, question: &str, default: bool) -> bool {
         println!();
         return default;
     }
-    let stdin = stdin();
+    let stdin = stdin().lock();
     let mut input = String::new();
     let _ = stdin.read_line(&mut input);
     let input = input.to_lowercase();
@@ -156,7 +156,7 @@ pub fn input(config: &Config, question: &str) -> String {
         println!();
         return "".into();
     }
-    let stdin = stdin();
+    let stdin = stdin().lock();
     let mut input = String::new();
     let _ = stdin.read_line(&mut input);
     input
